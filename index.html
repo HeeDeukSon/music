@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4a3a5a">
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Home Control</h1>
+    </header>
+    <div class="container">
+        <main>
+            <!-- Lighting Control Section -->
+            <section id="lighting">
+              <h2><i class="fas fa-lightbulb"></i> Lighting Control</h2>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="toggleLight">
+                    <label for="toggleLight" class="slider"></label>
+                </div>
+            </section>
+
+            <!-- Temperature Control Section -->
+            <section id="temperature">
+              <h2><i class="fas fa-thermometer-half"></i> Temperature Control</h2>
+                <p id="tempValue">78°F</p>
+                <div class="temp-controls">
+                  <button id="increaseTemp"><i class="fas fa-chevron-up"></i> Increase Temp</button>
+                  <button id="decreaseTemp"><i class="fas fa-chevron-down"></i> Decrease Temp</button>
+                </div>
+            </section>
+
+            <!-- Music Control Section -->
+            <section id="music">
+              <h2><i class="fas fa-music"></i> Music Control</h2>
+              <p id="songText">Press "Play" to get groovy!</p>
+              <div class="music-controls">
+                  <button id="playMusic"><i class="fas fa-play"></i> Play</button>
+                  <button id="pauseMusic"><i class="fas fa-pause"></i> Pause</button>
+                  <button id="stopMusic"><i class="fas fa-stop"></i> Stop</button>
+                  <button id="nextTrack"><i class="fas fa-forward"></i> Next</button>
+              </div>
+              <audio id="audioPlayer"></audio>
+          </section>          
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "name": "Smart Home Control",
+    "short_name": "SmartHomeControl",
+    "description": "A smart home control interface for lighting, temperature, and music.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#2c2330",
+    "theme_color": "#4a3a5a",
+    "icons": [
+      {
+        "src": "icons/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "icons/icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  
