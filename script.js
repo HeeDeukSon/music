@@ -43,10 +43,10 @@ const audioPlayer = document.getElementById('audioPlayer');
 
 // Array of songs (update these paths with your converted .mp3 or .wav files)
 const songs = [
-    { title: "KEY OF HEART", file: "./music/보아(BoA) - KEY OF HEART (Korean Ver.).mp3" },
-    { title: "Milky Way", file: "./music/보아(BoA) - Milky Way.mp3" },
-    { title: "Time To Begin", file: "./music/보아(BoA) - Time To Begin.mp3" },
-    { title: "Double", file: "./music/보아(BoA) - Double.mp3" }
+    { title: "KEY OF HEART", file: "./music/보아(BoA) - KEY OF HEART (Korean Ver.).wav" },
+    { title: "Milky Way", file: "./music/보아(BoA) - Milky Way.wav" },
+    { title: "Time To Begin", file: "./music/보아(BoA) - Time To Begin.wav" },
+    { title: "Double", file: "./music/보아(BoA) - Double.wav" }
 ];
 
 // Current song index
