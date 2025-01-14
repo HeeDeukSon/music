@@ -1,0 +1,158 @@
+/* General Body and Layout Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c2330; /* Dark background for the whole page */
+    color: white;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Outer container for all sections */
+.container {
+    background: #4a3a5a; /* Slightly lighter background to distinguish the container */
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+/* Main container for sections */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual section styles */
+section {
+    background: #3e3251; /* Box-like section background */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+/* Lighting Toggle Switch */
+.toggle-switch {
+    position: relative;
+    width: 120px;
+    height: 30px;
+    margin: 10px auto;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8a2be2; /* Toggle background color */
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 4px;
+    left: 4px;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #957dad; /* Change background when toggled on */
+}
+
+input:checked + .slider:before {
+    transform: translateX(90px); /* Move circle */
+}
+
+/* Temperature Section */
+#tempValue {
+    font-weight: bold;
+    font-size: 32px; /* Larger font size for emphasis */
+    color: #ffcc00; /* Yellow color for visibility */
+    margin: 10px 0;
+    text-shadow: 0 1px 4px rgba(255, 255, 0, 0.7); /* Glow effect for temperature */
+}
+
+.temp-controls {
+    display: flex;
+    justify-content: center; /* Horizontally aligns buttons */
+    gap: 10px;
+}
+
+/* Music Section */
+#music h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#songText {
+    font-size: 18px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-shadow: 0 1px 4px rgba(255, 255, 0, 0.8);
+    margin: 10px 0;
+}
+
+
+/* Music Controls */
+.music-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Button Styles */
+button {
+    background-color: #957dad;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff19db;
+    box-shadow: 0 6px 10px rgba(255, 25, 219, 0.4);
+}
+
+button:active {
+    background-color: #d117b8;
+    box-shadow: 0 0 15px rgba(255, 25, 219, 0.8);
+    transform: scale(0.95);
+}
